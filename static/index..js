@@ -5,7 +5,7 @@ const mainImg = document.getElementById("mainImg");
 mainImg.addEventListener('click', () => {
     showBigImgLayer.style.display = "flex";
     zoomImg.src = mainImg.src;
-    alert("To close this window click on the image.")
+    alert("To close this window click on the image.");
 });
 
 zoomImg.addEventListener('click', ()=> {

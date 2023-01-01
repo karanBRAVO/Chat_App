@@ -85,6 +85,7 @@ body {
     display: flex;
     flex-direction: row;
     margin-bottom: 5px;
+    align-items: center;
 }
 
 .topContainer .mainAvatarContainer {
@@ -470,14 +471,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 95%;
+    width: 93%;
     padding: 2px;
     margin: 1px;
 }
 
 .sendMsgArea textarea {
     resize: none;
-    width: 97%;
+    width: 100%;
     outline: none;
     border-radius: 10px;
     padding: 5px;
@@ -505,7 +506,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 5%;
+    width: 7%;
 }
 
 .sendMsgBtn button {
@@ -519,4 +520,5 @@ body {
     font-family: 'Inter', sans-serif;
     color: white;
     font-size: 1em;
+    padding: 1px;
 }
