@@ -9,5 +9,13 @@ PORT = 12345
 def index():
     return render_template("index.html")
 
+@app.route("/auth")
+def authentication():
+    return render_template("authentication.html")
+
+@app.route("/chooseAvatar")
+def authentication():
+    return render_template("chsImg.html")
+
 if __name__ == "__main__":
     app.run(IP, PORT, debug=True)
