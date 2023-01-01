@@ -14,7 +14,7 @@ def authentication():
     return render_template("authentication.html")
 
 @app.route("/chooseAvatar")
-def authentication():
+def chsImg():
     return render_template("chsImg.html")
 
 if __name__ == "__main__":
