@@ -16,6 +16,10 @@
 /* font-family: 'Ubuntu Condensed', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 /* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Andika&display=swap');
+/* font-family: 'Andika', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+/* font-family: 'Teko', sans-serif; */
 
 * {
     margin: 0;
@@ -27,6 +31,43 @@ body {
     -moz-user-select: none;
     -webkit-user-select: none;
     background-color: #404258;
+}
+
+.layer {
+    position: fixed;
+    background-color: #181D31;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.layer .innerLayer {
+    width: 70%;
+    height: 70%;
+    padding: 10px;
+    background-color: #EAEAEA;
+    border: 2px solid #EAEAEA;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.showImgBigCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 5px;
+    width: 70%;
+    background-color: #B2B2B2;
+}
+
+.showImgBigCont img {
+    width: 300px;
+    padding: 2px;
 }
 
 .mainContainer {
@@ -41,12 +82,66 @@ body {
     height: 7%;
     padding: 5px;
     background-color: #404258;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.topContainer .mainAvatarContainer {
+    padding: 1px;
+    width: 50%;
+}
+
+.mainAvatarContainer .mainUser {
+    padding: 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainUser .mainImgCont {
+    padding: 1px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFB100;
+}
+
+.mainImgCont img {
+    width: 40px;
+    height: auto;
+}
+
+.mainNameCont {
+    margin: 0 2px;
+}
+
+.mainNameCont .mName {
+    padding: 0.4px;
+}
+
+.mName p {
+    font-family: 'Andika', sans-serif;
+    font-size: 0.9em;
+    color: #F1F6F5;
+}
+
+.mainNameCont .mId {
+    padding: 0.3px;
+}
+
+.mId p {
+    font-family: 'Teko', sans-serif;
+    font-size: 0.8em;
+    color: #FFFFFF;
 }
 
 .topContainer .heading {
     padding: 2px;
     background-color: #404258;
-    text-align: center;
+    width: 50%;
 }
 
 .heading div {
@@ -152,6 +247,8 @@ body {
 .clientImgCont img {
     border-radius: 17px;
     padding: 1px;
+    width: 100%;
+    height: auto;
 }
 
 .client .clientNameCont {
@@ -180,8 +277,13 @@ body {
 }
 
 .client .optionCont {
+    display: none;
     width: 10%;
     padding: 1px;
+}
+
+.client:hover .optionCont {
+    display: block;
 }
 
 .optionCont .optionsBtn {
